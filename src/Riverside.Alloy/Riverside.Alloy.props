@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup Condition=" '$(TargetFramework)' == 'net9.0-windows10.0.26100.0' ">
+    <Alloy>UWP</Alloy>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(TargetFramework)' == 'net8.0-windows10.0.19041.0' ">
+    <Alloy>WinUI</Alloy>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Alloy)' == 'UWP' ">
+    <DefineConstants>$(DefineConstants);UWP</DefineConstants>
+    <UseUwp>true</UseUwp>
+    <UseUwpTools>true</UseUwpTools>
+    <IsAotCompatible>true</IsAotCompatible>
+    <DisableRuntimeMarshalling>true</DisableRuntimeMarshalling>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Alloy)' == 'WinUI' ">
+    <DefineConstants>$(DefineConstants);WinUI</DefineConstants>
+    <RuntimeIdentifiers>win-x86;win-x64;win-arm64</RuntimeIdentifiers>
+    <UseWinUI>true</UseWinUI>
+  </PropertyGroup>
+  <ItemGroup Condition=" '$(Alloy)' == 'WinUI' ">
+    <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.26100.1742" />
+    <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.6.241114003" />
+  </ItemGroup>
+</Project>
