@@ -5,7 +5,7 @@ VisualStudioVersion = 17.12.35424.110
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Riverside.Alloy", "src\Riverside.Alloy\Riverside.Alloy.csproj", "{6BD7C89F-C898-4B2C-BA7D-4DDCF9FEAA71}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Riverside.Alloy.Tests", "Riverside.Alloy.Tests\Riverside.Alloy.Tests.csproj", "{93E7F824-898C-4DD8-A539-A0E87A924039}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Riverside.Alloy.Tests", "tests\Riverside.Alloy.Tests\Riverside.Alloy.Tests.csproj", "{93E7F824-898C-4DD8-A539-A0E87A924039}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
