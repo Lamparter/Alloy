@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFrameworks>net8.0-windows10.0.19041.0;net9.0-windows10.0.26100.0</TargetFrameworks>
@@ -6,4 +6,39 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <PropertyGroup>    
+    <!-- Always search for entries in brackets: {} () [] -->
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>Alloy UAP</Title>
+    <Authors>Riverside, Lamparter</Authors>
+    <Company>Riverside Valley Corporation</Company>
+    <Copyright>Copyright (c) 2025 Riverside Valley Corporation</Copyright>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/Lamparter/Alloy</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>uap; winui; uwp; multitarget; riverside</PackageTags>
+    <Description>Enhanced custom tooling to bring components to both UWP and WinUI.</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <Version>1.0.0</Version>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="Assets\PackageLogo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Assets\PackageLogo.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 </Project>
