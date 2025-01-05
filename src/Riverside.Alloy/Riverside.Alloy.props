@@ -6,14 +6,14 @@
     <Alloy>WinUI</Alloy>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Alloy)' == 'UWP' ">
-    <DefineConstants>$(DefineConstants);UWP</DefineConstants>
+    <DefineConstants>$(DefineConstants);UWP;HAS_UWP</DefineConstants>
     <UseUwp>true</UseUwp>
     <UseUwpTools>true</UseUwpTools>
     <IsAotCompatible>true</IsAotCompatible>
     <DisableRuntimeMarshalling>true</DisableRuntimeMarshalling>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Alloy)' == 'WinUI' ">
-    <DefineConstants>$(DefineConstants);WinUI</DefineConstants>
+    <DefineConstants>$(DefineConstants);WinUI;HAS_WINUI</DefineConstants>
     <RuntimeIdentifiers>win-x86;win-x64;win-arm64</RuntimeIdentifiers>
     <UseWinUI>true</UseWinUI>
   </PropertyGroup>
