@@ -1,3 +1,19 @@
+> That seems fundamentally wrong to me
+> 
+> You cannot use the TFM to pick the UI framework
+> 
+> It will cause all sorts of problems
+
+> [!CAUTION]
+> This project is now abandoned. I do not recommend using it **ever**, as indicated by [Sergio](https://github.com/Sergio0694) (see above) in the Windows App Community Discord server.
+> This tooling, created for [CubeKit](https://github.com/RiversideValley/Toolkit), contains major code smells and various problems, including major interference with the .NET SDK and Roslyn analysers.
+> The tooling inspired by Alloy can be found in the CubeKit source today, though it unfortunately lacks the feature of having both UWP and WinUI code in one package that was the main selling point of Alloy.
+>
+> I **do not** recommend using Alloy **in any project**, as, while it is an epic idea, it is not executed very well.
+> Thanks for using Alloy!
+> 
+> PS: the only published version of CubeKit that uses Alloy is [`2.0.0-alpha1`](https://www.nuget.org/packages/Riverside.Toolkit/2.0.0-alpha1) 👀
+
 # `Alloy`
 
 ##### The new build system for the Windows Runtime.
